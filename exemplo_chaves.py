@@ -1,3 +1,10 @@
 from foneticaBR import foneticaBR
-teste = foneticaBR()
-teste.chavefonetica("JOSSEPH ARCADIANO DA CRUZ")
+from buscabr import buscaBR
+
+chaveRoberto = foneticaBR()
+chavebr = buscaBR()
+
+texto = 'JOSSEPH ARCADIANO DA CRUZ'
+print chaveRoberto.chavefonetica(texto)
+print chavebr.chaveBR(texto,False)
+print chavebr.chaveBR(texto,True)
