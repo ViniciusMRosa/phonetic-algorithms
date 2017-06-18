@@ -8,23 +8,23 @@ class buscaBR(object):
 
             # Substituir as vogais acentuadas 
 
-            chave = chave.replace("¡", "A");
+            chave = chave.replace("√Å", "A");
 
-            chave = chave.replace("¿", "A");
+            chave = chave.replace("√Ä", "A");
 
-            chave = chave.replace("√", "A");
+            chave = chave.replace("√É", "A");
 
-            chave = chave.replace(" ", "E");
+            chave = chave.replace("√ä", "E");
 
-            chave = chave.replace("…", "E");
+            chave = chave.replace("√â", "E");
 
-            chave = chave.replace("Õ", "I");
+            chave = chave.replace("√ç", "I");
 
-            chave = chave.replace("”", "O");
+            chave = chave.replace("√ì", "O");
 
-            chave = chave.replace("’", "O");
+            chave = chave.replace("√ï", "O");
 
-            chave = chave.replace("⁄", "U");
+            chave = chave.replace("√ö", "U");
 
             # substituir Y por I
 
@@ -100,7 +100,7 @@ class buscaBR(object):
             
             chave = chave.replace('RM', 'SM')
 
-            # Substituimos N, RM, GM, MD, SM e TerminaÁ„o AO por M
+            # Substituimos N, RM, GM, MD, SM e Termina√ß√£o AO por M
 
             chave = chave.replace('N', 'M')
 
@@ -116,7 +116,7 @@ class buscaBR(object):
 
             chave = chave.replace('PR', 'P')
 
-            # Substituimos «, X, TS, C, Z, RS por S
+            # Substituimos √á, X, TS, C, Z, RS por S
 
             chave = chave.replace('X', 'S')
 
@@ -124,7 +124,7 @@ class buscaBR(object):
 
             chave = chave.replace('C', 'S')
 
-            chave = chave.replace('«', 'S')
+            chave = chave.replace('√á', 'S')
 
             chave = chave.replace('Z', 'S')
 
@@ -146,7 +146,7 @@ class buscaBR(object):
 
             chave = chave.replace('W', 'V')
 
-            #  Eliminamos as terminaÁıes S, Z, R, R, M, N, AO e L;
+            #  Eliminamos as termina√ß√µes S, Z, R, R, M, N, AO e L;
 
             tam = len(chave) - 1
 

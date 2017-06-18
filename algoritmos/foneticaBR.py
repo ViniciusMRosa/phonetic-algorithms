@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
 
 class foneticaBR(object):
 
@@ -30,6 +30,8 @@ class foneticaBR(object):
 
             def tratarpalavras(palavra):
 
+                
+                palavra = retirarAcentos(palavra)
                 palavra = retirarrepetidas(palavra).upper()
 
                 x = len(palavra)
@@ -92,7 +94,7 @@ class foneticaBR(object):
                 tratar = tratar.replace('W','U')
                 tratar = tratar.replace('Y','I')
                 tratar = tratar.replace('Z','S')
-                tratar = tratar.replace('«', 'S')               
+                tratar = tratar.replace('√á', 'S')               
                     
                 tam = len(tratar)
 
@@ -357,27 +359,27 @@ class foneticaBR(object):
                 
                  # Substituir acentos e cedilha  
                 
-                frase = frase.replace("¡", "A");
+                frase = frase.replace("√Å", "A");
 
-                frase = frase.replace("¿", "A");
+                frase = frase.replace("√Ä", "A");
 
-                frase = frase.replace("√", "A");
+                frase = frase.replace("√É", "A");
 
-                frase = frase.replace(" ", "E");
+                frase = frase.replace("√ä", "E");
 
-                frase = frase.replace("…", "E");
+                frase = frase.replace("√â", "E");
 
-                frase = frase.replace("Õ", "I");
+                frase = frase.replace("√ç", "I");
 
-                frase = frase.replace("”", "O");
+                frase = frase.replace("√ì", "O");
 
-                frase = frase.replace("’", "O");
+                frase = frase.replace("√ï", "O");
 
-                frase = frase.replace("⁄", "U");
+                frase = frase.replace("√ö", "U");
                 
                 return frase
-
-            texto = retirarAcentos(texto.upper())
+            
+            texto = texto.upper()
             
             word_tokens = word_tokenize(texto)
 
