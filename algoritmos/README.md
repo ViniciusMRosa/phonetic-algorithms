@@ -2,7 +2,7 @@
 
 - **Estudo_Chaves_Foneticas.ipynb** - Notebook com a sequência de processamento
 - **buscabr.py** - Pacote com o algoritimo BuscaBR
-- **foneticaBR.py** - Pacote com o algoritmos do Roberto
+- **foneticaBR.py** - Pacote com o algoritmo do Roberto
 - **metaphoneBR.py** - Pacote com o algoritmo MetaphoneBR
 - **exemplo_chaves.py** - Exemplo de utilização dos pacotes.
 - **nomes_unicos.csv** - Base de Dados com 3290 nomes em português
